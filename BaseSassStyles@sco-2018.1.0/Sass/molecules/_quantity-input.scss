@@ -1,0 +1,109 @@
+// Quantity input
+//
+// Some of the molecules listed on this styleguide are responsive and change their behaviour according to the device or browser width.
+// This is one of those, so, you might change the width of your browser window and see the molecule change its behaviour.
+//
+// Markup:
+// <div class="quantity-input-container">
+//   <button class="quantity-input-button-remove">-</button>
+//   <input type="number" name="quantity" class="quantity-input" value="1" min="1" />
+//   <button class="quantity-input-button-add">+</button>
+// </div>
+//
+// Styleguide 3.11
+
+
+.product-details-quantity-container {
+	display: flex !important;
+    flex-direction: row;
+    flex-basis: 33.333%;
+    width: 100%;
+    border: 0;
+    &-minus-button,
+    &-plus-button {
+    	height: 40px;
+    	width: 40px;
+    	font-weight: bold;
+    	background: #fff;
+    	&[disabled="disabled"] {
+    		/*background: #efefef;*/
+    		color: #fff;
+    	}
+    }
+    &-minus-button {
+    	border-radius: 40px 0 0 40px;
+    	border-left: 1px solid #222;
+    	border-bottom: 1px solid #222;
+    	border-top: 1px solid #222;
+    }
+    &-plus-button{
+    	border-radius:0 40px 40px 0;
+    	border-right: 1px solid #222;
+    	border-bottom: 1px solid #222;
+    	border-top: 1px solid #222;
+    }
+    input {
+    	height: 40px;
+	    width: 40px;
+	    background: #efefef;
+	    color: #000;
+	    font-weight: 900;
+	    border-top: 1px solid #222;
+	    border-bottom: 1px solid #222;
+	    padding: 10px 0;
+	    text-align: center;
+    }
+
+}
+.quantity-input-container {
+	display: block;
+}
+
+input[type="number"].quantity-input {
+ 	width: 60px;
+ 	height: 40px;
+ 	text-align: right;
+ 	padding: $sc-margin-lv2;
+	background-color: $sc-color-copy-dark;
+	border: 0;
+	float: left;
+	margin-bottom: 0;
+
+	@media (min-width: $screen-md-min) {
+		display: block;
+		background: white;
+		float: none;
+		border: 1px solid $sc-color-copy-dark;
+	}
+}
+
+.quantity-input-button {
+	background-color: $sc-color-theme-500;
+	color: $sc-neutral-shade-0;
+	border: none;
+	width: 40px;
+	height: 40px;
+	float: left;
+
+	&:hover, &:active  {
+		background-color: $sc-color-theme-700;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@media (min-width: $screen-md-min) {
+		/*display: none;*/
+	}
+}
+
+.quantity-input-button-add {
+	@extend .quantity-input-button;
+	border-radius: 0 $sc-border-radius $sc-border-radius 0;
+}
+
+.quantity-input-button-remove {
+	@extend .quantity-input-button;
+	border-radius: $sc-border-radius 0 0 $sc-border-radius;
+}

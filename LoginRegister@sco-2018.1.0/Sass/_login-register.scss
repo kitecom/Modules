@@ -1,0 +1,72 @@
+.login-register-header{
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-title{
+	@extend .col-xs-12;
+}
+
+.login-register-body{
+	@extend .row;
+}
+
+.login-register-body-colored{
+	@extend .login-register-body;
+	background-color: #282828;
+	width: 100%;
+	padding: $sc-padding-lv8 $sc-padding-lv1;
+	margin: 0 auto $sc-padding-lv8;
+
+	@media (min-width: $screen-md-min){
+		width: 40%;
+		margin: 0 auto 60px;
+		padding: $sc-padding-lv8 $sc-padding-lv5;
+	}
+}
+
+.login-register-wrapper-column-login,
+.login-register-wrapper-column-register{
+	/*@extend .col-xs-12;
+	@extend .col-sm-6;*/
+}
+
+.login-register-wrapper-login,
+.login-register-wrapper-register{
+	@extend .box-column;
+	background-color: #282828;
+	color: #fff;
+	h2 {
+		color: #fff;
+		font-size: 2.25em;
+	}
+	p {
+		color: #fff;
+		font-size: 1.1em;
+	}
+}
+
+.login-register-wrapper-guest{}
+.login-register-title-register{}
+.login-register-login-form-label {
+	display: none;
+} 
+.login-register-login-form-controls{ 
+	p,
+	input {
+		background-color: transparent;
+		border-bottom: 1px solid #fff;
+	}
+}
+button.login-register-login-submit {
+	background-color: transparent;
+	color: #cca323;
+	border: 1px solid #cca323;
+	padding: 12px 50px;
+    font-size: 1.25em;
+    margin-top: 4px;
+	&::hover {
+		background-color: #cca323;
+		color: #fff;
+	}
+}

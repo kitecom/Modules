@@ -1,0 +1,108 @@
+.login-register-login-description{
+	margin-top: $sc-margin-lv4;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-login-form-controls-group {
+	margin-top: $sc-margin-lv4;
+	&.button {
+		width: 50%;
+		float: left;
+	}
+}
+.additional-links {
+	margin-top: $sc-margin-lv4;
+	width: 50%;
+	float: left;
+	a {
+		color: #fff;
+	    font-weight: 100;
+	    font-size: 1.05em;
+	    letter-spacing: 0.05em;
+	    width: 100%;
+	    display: block;
+	    margin: 0 0 8px 0;
+		&:after {
+			content: "\f0a9";
+			font-family: FontAwesome;
+			float: right;
+			font-weight: 100;
+			font-size: 1.25em;
+		}
+	}
+}
+.forgot-password {
+	width: 100%;
+	a {
+		color: #fff;
+	    font-weight: 100;
+	    font-size: 1.05em;
+	    letter-spacing: 0.05em;
+	    width: 50%;
+	    display: block;
+	    margin: 0 0 8px 0;
+	}
+}
+.login-register-login-form-label {}
+
+.login-register-login-form-required {
+	@extend .input-required;
+}
+
+.login-register-login-form-input {
+	@extend .input-large;
+}
+
+.login-register-login-submit {
+	@extend .button-large;
+	@extend .button-primary;
+}
+
+.login-register-login-forgot {
+
+	display:inline-block;
+	margin-top: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min) {
+		margin-top: 0;
+		margin-left: $sc-margin-lv2;
+	}
+}
+
+.login-register-login-form-messages {
+	margin-top: $sc-margin-lv4;
+
+	.global-views-message-error {
+		@extend .message-error;
+		margin-bottom: 0;
+	}
+
+	.global-views-message-button {
+		display: none;
+	}
+}
+
+.login-register-login-form-messages-timeout {
+	@extend .global-views-message;
+	@extend .global-views-message-error;
+}
+
+.login-register-login-form-controls-group {
+	@extend .login-register-register-form-controls-group;
+}
+
+
+
+.login-register-login-form-controls {
+	@extend .login-register-register-form-controls !optional;
+}
+
+.login-register-login-register-now{}
+.login-register-login-title{}
+.login-register-login-required{}
+.login-register-login-form-fieldset{}
+
+input.login-register-login-form-input {
+	width: 100%;
+}
+

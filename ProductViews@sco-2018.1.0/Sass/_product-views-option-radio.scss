@@ -1,0 +1,109 @@
+.product-views-option-radio {
+	margin-bottom:$sc-margin-lv2;
+	[data-validation-error="block"]{
+  		display:table;
+  		margin-top:$sc-margin-lv1;
+  	}
+    border-bottom: 1px solid #ccc;
+}
+
+.product-views-option-radio-title {
+	text-transform:none;
+	font-weight:$sc-font-weight-bold;
+	margin-bottom:$sc-margin-lv2;
+	display: block;
+
+	span {
+		font-weight:$sc-font-weight-normal;
+	}
+}
+.product-views-option-radio-input-required{
+	@extend .input-required;
+}
+
+.product-views-option-radio-label {
+	text-transform:none;
+	color:$sc-color-copy-dark;
+	font-weight:$sc-font-weight-bold;
+	font-size:$sc-font-size-m;
+}
+
+.product-views-option-radio-value {
+	@extend .sc-value;
+  margin-right: 30px;
+}
+
+.product-views-option-color-label-header,
+.product-views-option-radio-label-header {
+	text-transform:none;
+}
+
+.custcol_colour-controls,
+.custcol_config-controls, 
+.custcol_water_sys-controls, 
+.custcol_disp_opts-controls {
+}
+.product-views-option-color-label-header {
+}
+.custcol_colour-controls {
+}
+
+
+.product-views-option-radio-input {
+	margin-right:$sc-margin-lv1;
+}
+.product-views-option-color-picker-input {
+	&:before {
+		& [value="1"] {
+		  	background: red
+		  }
+		& [value="2"] {
+		  	background: green
+		  }
+		& [value="3"] {
+		  	background: blue
+		  }
+	}
+}
+
+.product-views-option-color-picker-box[value="1"]  {
+  background: #000;
+}
+.product-views-option-color-picker-box[value="2"]  {
+  background: #B3B6B5;
+}
+.product-views-option-color-picker-box[value="3"]  {
+  background: #fff;
+}
+.product-views-option-color-picker-box,
+.product-views-option-color-picker-input{
+  height: 50px;
+  width: 50px;
+  top: -1px;
+  left: -2px;
+  + span{
+    border-radius: 50%;
+  }
+  &[value="1"] + span{
+    &:before {
+    background: #000;
+    border: 1px solid #fff;
+    }
+  }
+  &[value="2"] + span{
+    &:before {
+    background: #B3B6B5;
+    border: 1px solid #fff;
+    }
+  }
+  &[value="3"] + span{
+    &:before {
+    background: #fff;
+    border: 1px solid #fff;
+  }
+ }
+}
+
+
+
+

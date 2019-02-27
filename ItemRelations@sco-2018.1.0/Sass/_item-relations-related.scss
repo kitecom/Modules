@@ -1,0 +1,116 @@
+.item-relations-related-items {
+	position: relative;
+	h3 {
+		font-size: 2.4rem;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+}
+
+.item-relations-related .bx-controls-direction {
+    text-align: right;
+	margin-bottom: $sc-margin-lv3;
+}
+.item-relations-related h3 {
+    margin-bottom: $sc-margin-lv8;
+}
+
+.item-relations-related .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.item-relations-cell,
+.item-relations-cell.bx-clone{
+}
+
+.item-relations-related-carousel-next,
+.item-relations-related-carousel-prev {
+	/*@extend .button-tertiary;*/
+	/*@extend .button-small;*/
+	cursor:pointer;
+	cursor:hand;
+	/*position:absolute;
+	left:0px;
+	background-color: #000;
+	border: 2px solid #fff;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: 900;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1px 3px 0 0;
+    top: 30%;*/
+}
+.item-relations-related-carousel-next{
+	/*right: 0px;
+    left: auto;
+    padding: 1px 0 0 3px;*/
+}
+.item-relations-related-carousel-next.disabled,
+.item-relations-related-carousel-prev.disabled {
+	display: none;
+}
+.item-relations-cell {
+	display: flex;
+	flex-direction: column;
+}
+.item-relations-cell > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 96%;
+    margin: 0 2%;
+    background-color: #fff;
+	.item-relations-related-item-title,
+	.item-relations-related-item-sku,
+	.item-relations-related-item-price,
+	.cart-add-to-cart-button-button {
+		display: flex;
+		flex: 1;
+		padding: 10px 5px 0 5px;
+    	text-align: left;
+	}
+	.item-relations-related-item-thumbnail-dc {
+	    min-height: 217px;
+	    background: #000;
+	    display: flex;
+    	align-items: center;
+	}
+	.item-relations-related-item-title {
+		flex: 2;
+		margin-bottom: 0px;
+		span {min-height: 50px;}
+	}
+	.cart-add-to-cart-button-button {
+		width: 60%;
+		padding: 12px 24px;
+		border-radius: 18px;
+	}
+	.item-relations-related-item-price .product-views-price {
+		margin: 0;
+	}
+}
+.carousel-prev-arrow,
+.carousel-next-arrow {
+	height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 37px;
+    font-size: 2rem;
+    position: absolute;
+    top: 140px;
+}
+.carousel-prev-arrow {
+	left: 0;
+}
+.carousel-next-arrow {
+	right: 0;
+}

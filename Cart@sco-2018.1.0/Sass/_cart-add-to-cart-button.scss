@@ -1,0 +1,21 @@
+.cart-add-to-cart-button-button{
+	@extend .button-primary;
+	@extend .button-large;
+	width: auto;
+ 	font-weight: $sc-font-weight-semibold;
+ 	margin-bottom: $sc-margin-lv3;
+	border-radius: 25px;
+	padding: 14px 24px;
+}
+
+.cart-add-to-cart-button {
+	position: static;
+	position: static;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.cart-add-to-cart-button-container {
+	/*@extend .col-sm-6;*/
+}

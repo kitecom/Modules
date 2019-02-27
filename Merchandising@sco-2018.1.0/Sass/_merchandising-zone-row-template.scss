@@ -1,0 +1,17 @@
+.merchandising-zone-row-template{
+	display: flex;
+	flex-flow: row wrap;
+	flex-basis: 25%;
+}
+.cms-content-CMS_MERCHZONE aside{
+	.row-fluid {
+		display: flex;
+		flex-flow: row wrap;
+		flex-basis: 25%;
+		justify-content: space-between;
+		.span3 {
+			width: 23%;
+			margin: 1%;
+		}
+	}
+}
